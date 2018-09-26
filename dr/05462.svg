@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" onmouseup="{ if(window.parent.document.onmouseup) window.parent.document.onmouseup(arguments[0]);}" viewBox="0 0 36 36" height="128" width="128" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <circle id="tips-b" cx="18" cy="18" r="16"/>
+    <filter id="tips-a" width="118.8%" height="118.8%" x="-9.4%" y="-9.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="128" height="128" fill="#03FF00" opacity="0"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000" filter="url(#tips-a)" xlink:href="#tips-b"/>
+    <circle cx="18" cy="18" r="15" fill="#000" stroke="#FFF" stroke-linejoin="square" stroke-width="2"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M23.4 14.307C23.3295873 11.3904411 20.9096247 9.08236876 17.993 9.15 17.6291298 9.15003737 17.2661128 9.18520045 16.909 9.255 14.4935029 9.79298568 12.7319338 11.8738366 12.6 14.345 12.6 17.074 15 18.522 15 21L15 22 21 22 21 21C21 18.5 23.4 16.976 23.4 14.307zM15 23L15 24.183C15.0000643 24.3611157 15.0635168 24.5333946 15.179 24.669L16.941 26.736C17.0834466 26.9034276 17.2921749 26.9999325 17.512 27L18.488 27C18.7076637 27.0001821 18.9163651 26.9040552 19.059 26.737L20.821 24.67C20.9367063 24.5341328 21.0001735 24.3614596 21 24.183L21.0000004 23 15 23z"/>
+  </g>
+</svg>

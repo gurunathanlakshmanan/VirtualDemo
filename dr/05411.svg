@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" onmouseup="{ if(window.parent.document.onmouseup) window.parent.document.onmouseup(arguments[0]);}" viewBox="0 0 36 36" height="128" width="128" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <circle id="info-b" cx="18" cy="18" r="16"/>
+    <filter id="info-a" width="118.8%" height="118.8%" x="-9.4%" y="-9.4%" filterUnits="objectBoundingBox">
+      <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="128" height="128" fill="#7ED321" opacity="0"/>
+    <use xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000" filter="url(#info-a)" xlink:href="#info-b"/>
+    <circle cx="18" cy="18" r="15" fill="#000" stroke="#FFF" stroke-linejoin="square" stroke-width="2"/>
+    <path fill="#FFF" d="M22,26 C22,26.6162441 21.6082492,27 21,27 L16,27 C15.3917508,27 15,26.6162441 15,26 L15,24 C15,23.9551845 15.3917508,23.5714286 16,24 L17,24 L17,18 L16,18 C15.3917508,18.4285714 15,18.0448155 15,18 L15,16 C15,15.3837559 15.3917508,15 16,15 L19,15 C19.8582492,15 20.25,15.3837559 20,16 L20,24 L21,24 C21.6082492,23.5714286 22,23.9551845 22,24 L22,26 Z"/>
+    <circle cx="17.5" cy="10.5" r="2.5" fill="#FFF"/>
+  </g>
+</svg>
